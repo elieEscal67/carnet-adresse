@@ -1,1 +1,5 @@
-<h1>Carnet d’adresses</h1>
+<app-contact-form (contactAdded)="addContact($event)"></app-contact-form>
+<app-contact-list 
+  [contacts]="contacts"
+  (deleteContact)="deleteContact($event)">
+</app-contact-list>
